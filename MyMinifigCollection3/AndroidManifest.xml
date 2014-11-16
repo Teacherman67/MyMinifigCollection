@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.senproj.myminifigcollection3"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".EntryActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainCategoryActivity"
+            android:label="@string/title_activity_main_category"
+            android:parentActivityName=".EntryActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.senproj.myminifigcollection3.EntryActivity" />
+        </activity>
+        <activity
+            android:name=".PriSubCatActivity"
+            android:label="@string/title_activity_pri_sub_cat"
+            android:parentActivityName=".MainCategoryActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.senproj.myminifigcollection3.MainCategoryActivity" />
+        </activity>
+        <activity
+            android:name=".MinifigureListActivity"
+            android:label="@string/title_activity_minifigure"
+            android:parentActivityName=".MainCategoryActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.senproj.myminifigcollection3.MainCategoryActivity" />
+        </activity>
+        <activity
+            android:name=".SecSubCatActivity"
+            android:label="@string/title_activity_sec_sub_cat"
+            android:parentActivityName=".PriSubCatActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.senproj.myminifigcollection3.PriSubCatActivity" />
+        </activity>
+        <activity
+            android:name=".TertSubCatActivity"
+            android:label="@string/title_activity_tert_sub_cat"
+            android:parentActivityName=".SecSubCatActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.senproj.myminifigcollection3.SecSubCatActivity" />
+        </activity>
+        <activity
+            android:name=".FigList"
+            android:label="@string/title_activity_fig_list" >
+        </activity>
+        <activity
+            android:name=".FigDetailActivity"
+            android:label="@string/title_activity_fig_detail"
+            android:parentActivityName=".FigList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.senproj.myminifigcollection3.FigList" />
+        </activity>
+    </application>
+
+</manifest>

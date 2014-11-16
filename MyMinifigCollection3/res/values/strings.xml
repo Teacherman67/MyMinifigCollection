@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Minifig Collection</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="strWelcome"><b>Welcome to your minifigure collection! Build your collection, browse the catalog of over 7000 minifigs, and share your collection with friends!</b></string>
+    <string name="strCatalogView">View the Catalog</string>
+    <string name="strCollectionView">View My Collection</string>
+    <string name="title_activity_main_category">Catalog: Main Categories</string>
+    <string name="title_activity_pri_sub_cat">Catalog: First Level Subs</string>
+    <string name="title_activity_minifigure">Catalog: Minifigure View</string>
+    <string name="title_activity_sec_sub_cat">Catalog: Second Level Subs</string>
+    <string name="title_activity_tert_sub_cat">Catalog: Third Level Subs</string>
+    <string name="title_minifigure_list">Minifigures</string>
+    <string name="title_minifigure_detail">Minifigure Detail</string>
+    <string name="title_activity_fig_list">Minifigures</string>
+    <string name="title_activity_fig_detail">FigDetailActivity</string>
+    <string name="strFigID">App Fig ID</string>
+    <string name="strBLFigID">BrickLink ID</string>
+
+</resources>
